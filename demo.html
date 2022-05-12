@@ -31,7 +31,7 @@
     <!-- header -->
     <header>
         <!-- navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-edit" >
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Fake Company</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -41,8 +41,8 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        <a class="nav-link" href="#">employees</a>
-                        <a class="nav-link" href="#">About us</a>
+                        <a class="nav-link" href="#emp">employees</a>
+                        <a class="nav-link" href="#abt ">About us</a>
                     </div>
                 </div>
             </div>
@@ -54,6 +54,7 @@
     <main>
         <!-- intro -->
         <section class="intro">
+            <h1>Welcome to Our Company</h1>
             <!-- carousal -->
 
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -100,7 +101,7 @@
         </section>
 
         <!--empolyees-->
-        <section class="employees">
+        <section class="employees" id="emp">
             <div class="container">
                 <div class="row">
                     <!-- looping cards -->
@@ -108,20 +109,22 @@
 
                         let employees = [
                             {
-                                name: "Niranjan",
-                                Designation: "software engineer",
+                                name: "Ragu",
+                                Designation: "senior software engineer",
                                 Image: "./images/male employee.png"
                             },
+
                             {
                                 name: "Akshal",
                                 Designation: "software engineer",
                                 Image: "./images/female employee.png"
                             },
+
                             {
-                                name: "fake",
-                                Designation: "software engineer",
+                                name: "Niranjan",
+                                Designation : "software engineer",
                                 Image: "./images/male employee.png"
-                            }
+                            },
                         ]
                         employees.forEach(
                             person => {
@@ -131,7 +134,7 @@
                                     <img src="${person.Image}" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">${person.name}</h5>
-                                        <p class="card-text">${person.Designation}</p>
+                                        <p class="card-text designation">${person.Designation}</p>
                                     </div>
                                     </div>
                                     </div>
@@ -145,9 +148,14 @@
 
         </section>
         <!-- about -->
-        <section class="about">
+        <section class="about" id="abt">
 
-            
+                <div class="container">
+                    <div class="row">
+                        <h1 style="color: red;">About Us</h1>
+                        <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem assumenda recusandae atque aliquid fugit. Aut natus soluta ratione cum sapiente tenetur reprehenderit harum modi odit, minus repudiandae doloribus, a officiis voluptatum qui alias. Eos odit et fugit expedita commodi id veniam ut sunt? Iste perspiciatis tenetur quis qui placeat aspernatur animi voluptates incidunt odio sunt! Doloremque magnam distinctio ipsam accusantium error. Nam sed a asperiores tempora, at inventore nisi dicta!</div>
+                    </div>
+                </div>
 
         </section>
     </main>

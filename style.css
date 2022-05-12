@@ -1,55 +1,37 @@
+:root{
+  --bgcolor:burlywood;
+  --displaynone : none;
+}
+::-webkit-scrollbar{
+  display:none
+}
 
+body{
+  background-color:var(--bgcolor);
+  margin: 0;
+  padding: 0;
+}
+.navbar-edit{
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+/* .designation{
+  display: var(--displaynone);
+} */
+
+.card{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 7px 13px 0 rgba(111, 9, 9, 0.5);
+  transition: 1000ms;
  
- 
- /* NAVBAR STYLING STARTS */
-.navbar {
- display: flex;
- align-items: center;
- justify-content: space-between;
- padding: 1px;
- background-color: #4e4e4e;
- color: #fff;
- backdrop-filter: blur(2px);
- height: 10vh;
- 
+}
+
+.card:hover {
+  box-shadow: 0 15px 26px 0 rgba(0,0,0,0.2);
+  transform: scale(1.1);
+  opacity: 1;
+  /* --displaynone:content */
 
 }
-.nav-links a {
- color: #fff;
- text-decoration:none ;
-
-
-}
-/* LOGO */
-.logo {
- font-size: 32px;
-}
-/* NAVBAR MENU */
-.menu {
- display: flex;
- gap: 120px;
- font-size: 0.5px;
-}
-.menu li:hover {
- background-color: #000000;
- border-radius: none ;
- transition: 0.5s ease;
-}
-.menu li,a:visited{
- color: rgb(255, 255, 255);
- 
-
-
-
-
-}
-.menu li {
- padding: 5px 14px;
- font-size: 19px;
- list-style: none;
- border: none;
- border-radius: 30px;
- font-size: 16px;
- font-weight: 700;
- }
-
