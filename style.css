@@ -62,8 +62,8 @@ body{
   margin-top: 10%;
 }
 .navbar-nav{
-  gap: 5rem;
-  margin-left: 27%;
+  gap: 0.6rem;
+  margin-left: 32%;
 }
 
 .ss{
@@ -80,3 +80,46 @@ body{
   margin-left: 15%;
   margin-right: 15%;
 }
+.newcontact{
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  
+}
+.uppercontact{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 24rem;
+  align-items: center;
+  width: 700px;
+  margin-bottom: 5rem;
+}
+.contactdata{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.contactdata>:nth-child(1){
+  font-size: 2rem ;
+  font-weight: 600;
+  color: #EF1F83;
+  margin-bottom: -2rem;    
+}
+.contactdata>:nth-child(3){
+  font-size: 4rem ;
+  font-weight: 600;
+  background: -webkit-linear-gradient(0deg, #433FF1 0%, #EF1F83 80.21%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+.contactdata>:nth-child(2){
+  font-size: 22px;
+  font-weight: 300;
+  margin-top: 4rem;
+  color:var(--txt-para)
+}
+
+
